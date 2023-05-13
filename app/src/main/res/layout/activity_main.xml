@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#26495c">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expressionenter"
+        app:layout_constraintVertical_bias="0.95">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/square_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="SquareFunc"
+                android:text="@string/square"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cuvbe_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="CubeFunc"
+                android:text="@string/cube"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/square_root_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="Square_Root_Func"
+                android:text="@string/square_root"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cube_root_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="Cube_Root_Func"
+                android:text="@string/cube_root"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/parenthesis_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="ParenthesisFunc"
+                android:text="@string/parenthesis"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exponent_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="ExponentFunc"
+                android:text="@string/exponent"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mod_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="ModFunc"
+                android:text="@string/mod"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/factorial_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="FactorialFunc"
+                android:text="@string/factorial"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seven_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="SevenFunc"
+                android:text="@string/seven"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/eight_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="EightFunc"
+                android:text="@string/eight"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nine_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="NineFunc"
+                android:text="@string/nine"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/divide_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="DivideFunc"
+                android:text="@string/divide"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/four_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="FourFunc"
+                android:text="@string/four"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/five_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="FiveFunc"
+                android:text="@string/five"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/six_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="SixFunc"
+                android:text="@string/six"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiply_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="MultiplyFunc"
+                android:text="@string/multiply"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/one_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="OneFunc"
+                android:text="@string/one"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/two_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="TwoFunc"
+                android:text="@string/two"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/three_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="ThreeFunc"
+                android:text="@string/three"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minus_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="MinusFunc"
+                android:text="@string/minus"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/zero_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="ZeroFunc"
+                android:text="@string/zero"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/decimal_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="DecimalFunc"
+                android:text="@string/decimal"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/equal_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="#9bc472"
+                android:onClick="EqualFunc"
+                android:text="@string/equal"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/plus_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:onClick="PlusFunc"
+                android:text="@string/plus"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/del_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#f5beb4"
+        android:onClick="DelFunc"
+        android:text="@string/del"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+<!--    android:drawableTop="@drawable/del_button"-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clear_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#b85042"
+        android:onClick="ClearFunc"
+        android:text="@string/clear"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/expressionenter"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:autofillHints="false"
+        android:inputType="none"
+        android:text="@string/expressionenter"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        android:background="@drawable/textshadow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
